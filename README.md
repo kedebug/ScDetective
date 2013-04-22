@@ -1,5 +1,5 @@
 ScDetective
-===========
+==============================================================
 
 A kernel level anti-rootkit tool runs on the windows platform.
 
@@ -15,7 +15,7 @@ DDK版本：7600.16385.1
 
 完成时间：2010.12
 
-“
+
 
 驱动包括6大模块：
 
@@ -31,7 +31,7 @@ DDK版本：7600.16385.1
 
 6、文件过滤模块（基于微软sfilter库）（雏形）
 
-”
+
 
 kedebug@LoCCS
 
