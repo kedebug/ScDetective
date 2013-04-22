@@ -1,7 +1,7 @@
 ScDetective
 ==============================================================
 
-##A kernel level anti-rootkit tool runs on the windows platform.
+A kernel level anti-rootkit tool runs on the windows platform.
 
 界面开发：VS2008 + MFC
 
