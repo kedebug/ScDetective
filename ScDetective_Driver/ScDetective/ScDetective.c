@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 ///
-/// Copyright (c) 2010 - CSU_SUN
+/// Copyright (c) 2010 - kedebug
 ///
 /// Original filename: ScDetective.cpp
 /// Project          : ScDetective
@@ -117,7 +117,7 @@ NTSTATUS ScDetective_DispatchDeviceControl(
                 }
             }
         //////////////////////////////////////////////////////////////////////////
-        case IOCTL_GET_SSDT:    // »ñÈ¡ ssdt
+        case IOCTL_GET_SSDT:    // ï¿½ï¿½È¡ ssdt
             {         
                 ULONG NeedLen = 0;
                 ULONG Number = GetSsdtServiceNumber();
@@ -137,21 +137,21 @@ NTSTATUS ScDetective_DispatchDeviceControl(
                 break;
             } 
         //////////////////////////////////////////////////////////////////////////
-        case IOCTL_UNHOOK_SSDT:          // »Ö¸´ ssdt
+        case IOCTL_UNHOOK_SSDT:          // ï¿½Ö¸ï¿½ ssdt
             {
                 PSSDT_ADDRESS SsdtOrig = (PSSDT_ADDRESS)InputBuffer;
 
                 if (cbInputBuffer < sizeof(SSDT_ADDRESS) || 
                     InputBuffer == NULL) {
-                    KdPrint(("ÊäÈë»º³åÇø»òÊäÈë»º³åÇø³¤¶ÈÎÞÐ§"));
+                    KdPrint(("ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§"));
                     ntStatus = STATUS_UNSUCCESSFUL;
                     break;
                 }
-                KdPrint(("Òª»Ö¸´µÄ·þÎñºÅ£º%d Ô­Ê¼µØÖ·£º0x%X", 
+                KdPrint(("Òªï¿½Ö¸ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½Å£ï¿½%d Ô­Ê¼ï¿½ï¿½Ö·ï¿½ï¿½0x%X", 
                     SsdtOrig->nIndex, SsdtOrig->FunAddress));
 
                 if (!UnHookSsdtItem(SsdtOrig)) {
-                    KdPrint(("»Ö¸´Ê§°Ü"));
+                    KdPrint(("ï¿½Ö¸ï¿½Ê§ï¿½ï¿½"));
                     ntStatus = STATUS_UNSUCCESSFUL;
                 }
                 break;
@@ -184,10 +184,10 @@ NTSTATUS ScDetective_DispatchDeviceControl(
 
                 if (cbInputBuffer < sizeof(SSDT_ADDRESS) || 
                     InputBuffer == NULL) {
-                    KdPrint(("ÊäÈë»º³åÇø»òÊäÈë»º³åÇø³¤¶ÈÎÞÐ§"));
+                    KdPrint(("ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë»ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§"));
                     ntStatus = STATUS_UNSUCCESSFUL;  break;
                 }
-                KdPrint(("Òª»Ö¸´µÄ·þÎñºÅ£º%d Ô­Ê¼µØÖ·£º0x%X", 
+                KdPrint(("Òªï¿½Ö¸ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½Å£ï¿½%d Ô­Ê¼ï¿½ï¿½Ö·ï¿½ï¿½0x%X", 
                     ShadowSsdtOrig->nIndex, ShadowSsdtOrig->FunAddress));
 
                 if (!UnHookShadowSsdtItem(ShadowSsdtOrig, g_CsrssProcess)) {
