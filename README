@@ -20,7 +20,7 @@ DEBUG ：        Windbg + VirtualKD + VMware
 PLATFORM :      XPSP3 + WIN7
 TIME :          2010.12
 
-There are about 6 modules in the scdetective_driver content:
+There are about 6 modules in the ScDetective_Driver content:
 1. Detect and restore the SSDT and shadow SSDT.
 2. Detect and static judging the active processes.
 3. Detect and static judging the drivers.
