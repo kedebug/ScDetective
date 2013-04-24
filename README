@@ -1,7 +1,7 @@
 ScDetective
 ==============================================================
 
-A kernel level anti-rootkit tool runs on the windows platform.
+A kernel level anti-rootkit tool which runs on the windows platform.
 
 ScDetective is my very first project, and it's currently in a very alpha state.
 It was finished in my third year in college, at that time I was addicted to the 
