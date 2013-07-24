@@ -1,14 +1,14 @@
 ScDetective
 ==============================================================
 
-#### A kernel level Anti-Rootkit tool which runs on the windows platform.   
+#### A kernel level Anti-Rootkit tool which runs on the windows platform. 
 
-ScDetective is my very first project, and it's currently in a very alpha state.   
-It was finished in my third year in college, at that time I was addicted to the    
-windows driver programming and accumulated lot of debug skills.    
+ScDetective is my very first project, and it's currently in a very alpha state. 
+It was finished in my third year in college, at that time I was addicted to the
+windows driver programming and accumulated lot of debug skills. 
 
-Thanks to the great open source spirit, without previous work I couldn't do all     
-this alone. Thanks to the bbs.pediy.com forum, it gave me so much happiness and    
+Thanks to the great open source spirit, without previous work I couldn't do all
+this alone. Thanks to the bbs.pediy.com forum, it gave me so much happiness and 
 unforgetable memories in my college life.
 
 If you have any suggestion or questions, please feel free to get in touch via sunweiqq@gmail.com.
