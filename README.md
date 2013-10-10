@@ -12,21 +12,25 @@ this alone. Thanks to the [bbs.pediy.com](http://bbs.pediy.com/) forum, it gave 
 unforgetable memories in my college life.
 
 If you have any suggestion or questions, please feel free to get in touch via sunweiqq@gmail.com.
+>  
+- GUI : VS2008 + MFC
+- Driver :VS2005 + ddkwizard
+- DDK Version：7600.16385.1
+- Debug ：  Windbg + VirtualKD + VMware
+- Platform :XPSP3 + WIN7
+- Finished :  2010.12
 
-- GUI :         VS2008 + MFC
-- Driver :        VS2005 + ddkwizard
-- DDK Version：   7600.16385.1
-- Debug ：        Windbg + VirtualKD + VMware
-- Platform :      XPSP3 + WIN7
-- Finished :          2010.12
-
-#### There are about 6 modules in the ScDetective_Driver content:  
-- Detect and restore the SSDT and shadow SSDT.
-- Detect and static judging the active processes.
-- Detect and static judging the drivers.
-- HookEngine module and part of the work was reversed from CNNIC driver.
-- Self-protect module(some DKOM skills).
-- A demo file filter driver depended on sfilter library(NOT finished).
+#### There are about 6 modules in the ScDetective_Driver content:
+>  
+1. Detect and restore the SSDT and shadow SSDT.
+ - Checking SSDT in both user and kernel module to ensure accuracy.
+2. Detect and static judging the active processes.
+3. Detect and static judging the drivers.
+4. HookEngine module and part of the work was reversed from CNNIC driver.
+ - Send Deferred Procedure Call(DPC) to ensure the safety during the hooking.
+ - The Engine was reversed from CNNIC hook module.
+5. Self-protect module(some DKOM skills).
+6. A demo file filter driver depended on sfilter library(NOT finished).
 
 #### kedebug   
 Department of Computer Science and Engineering,   
