@@ -1,4 +1,4 @@
-ScDetective
+ScDetective  [![Total views](https://sourcegraph.com/api/repos/github.com/kedebug/ScDetective/counters/views.png)](https://sourcegraph.com/github.com/kedebug/ScDetective)
 ==============================================================
 A kernel level Anti-Rootkit tool which runs on the windows platform. 
 
