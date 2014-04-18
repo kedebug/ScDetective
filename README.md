@@ -38,4 +38,4 @@ Thanks to the great open source spirit, without previous work I couldn't do all
 this alone. Thanks to the [bbs.pediy.com](http://bbs.pediy.com/) forum, it gave me so much happiness and 
 unforgetable memories in my college life.
 
-If you have any suggestion or questions, please feel free to get in touch via sunweiqq@gmail.com.
+If you have any suggestion or questions, please feel free to get in touch via kedebug0@gmail.com.
